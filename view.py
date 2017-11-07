@@ -21,3 +21,8 @@ class View:
     @staticmethod
     def display_wrong_input():
         print('Wrong input')
+
+    @staticmethod
+    def display_items(item_list):
+        for id, item in enumerate(item_list):
+            print(id, ' ' + item)

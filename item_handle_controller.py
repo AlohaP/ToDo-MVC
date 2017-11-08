@@ -1,11 +1,13 @@
 from view import View
-from item_controller import ItemController
 
 class HandleController():
 
     def __init__(self, todo_handle):
         self.todo_handle = todo_handle
-        self.item_controller = ItemController
+
+
+    def add_item(self, item):
+        self.todo_handle.add_item(item)
 
     def show_all_items(self):
         item_list = list(self.todo_handle.get_item_list())
@@ -22,8 +24,6 @@ class HandleController():
         except ValueError:
             View.display_wrong_input()
 
-    def add_item(self, item):
-        self.todo_handle.add_item(item)
 
     def mark_item(self, index):
         try:

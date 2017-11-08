@@ -7,7 +7,7 @@ class HandleItem:
         self.item_list.append(item)
 
     def remove_item(self, index):
-        self.item_list.remove(index)
+        self.item_list.pop(index)
 
     def get_item_list(self):
         return self.item_list

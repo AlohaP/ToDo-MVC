@@ -3,9 +3,6 @@ from view import View
 
 class ItemController():
 
-    def __init__(self):
-        pass
-
     def create_item(self):
         item_name = View.user_input('Type item name: ')
         item_description = View.user_input('\nType short description (max 150 characters):')
